@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Jquery-First jquery enabled page</title>
+    <script src="Jquery.js" type="text/javascript"> </script>
+
+    <script type="text/javascript">
+        //$ is jquery object and document.ready is a jquery event handler
+       // USING SELECTORS
+        $("document").ready(function () {
+
+            //selects two elements paragraph and list with clas b
+            //$("p,li.b").css("border", "3px  solid red");
+
+            //selects the descendant from ancestor 
+            //$("ul,li.a").css("border", "3px  solid red");
+
+            //selects the first paragraph next to the unlisted list
+            //$("ul+p").css("border", "3px  solid red");
+
+            //selects all the sibilings of paragraph which comes after unlisted list with id #list1
+            // $("#list1~p").css("border", "3px  solid red");
+
+            //BASIC FILTERS
+            //$("p:first").css("border", "3px solid red");
+            // $("p:last").css("border", "3px solid red");
+
+            //in Jquery indexing start from zero
+            // $("p:even").css("border", "3px solid red");
+            // $("p:odd").css("border", "3px solid red");
+
+            // $(".a:first").css("border", "3px solid red");
+
+            //filter all the paragraph greater than index 1
+            // $("p:gt(1)").css("border", "3px solid red");
+
+            //filter all tha para that is not equal to index 2
+            // $("p:not(p:eq(2))").css("border", "3px solid red");
+
+            //ATTRIBUTE FILTERS
+            //filters all the paragraph with class attribute
+            //$("p[class]").css("border", "3px solid red");
+            // $("p[id=para2]").css("border", "3px solid red");
+            // $("p[id^=para]").css("border", "3px solid red");
+
+            //CONTENT FILTERS
+            //filters all tha paragraph which contains  text "3"
+            // $("p:contains(3)").css("border", "3px solid red");
+
+            //$(":contains(3)").css("border", "3px solid red");
+
+            $("form :radio:checked").css("border","3px solid red");
+        });
+    
+    
+    </script>
+</head>
+<body>
+ <style type="text/css">
+    .a {color:Navy;}
+    .b {color:red;}
+ </style>
+  <ul id="list1">
+     <li class="a">Item1</li>
+     <li class="a">Item2</li>
+     <li class="b">Item3</li>
+     <li class="b">Item4</li>
+  </ul>
+
+  <p class="a">this is paragraph1</p>
+  <p id="para2">this is paragraph2</p>
+  <p class="b">this is paragraph3</p>
+  <p id="para4">this is paragraph4</p>
+    <p>
+     male:   <input id="Radio1" type="radio" checked="checked" />
+</body>
+</html>

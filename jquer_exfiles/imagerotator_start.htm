@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Image Rotator</title>
+    <script type="text/javascript" src="jquery-1.3.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            setInterval("rotateImages()", 2000);
+            });
+
+            function rotateImages() {
+
+                //get the current photo 
+                var curphoto = $("#photoShow div.current");
+
+                //look for next photo
+                var nxtphoto = curphoto.next();
+
+                //since for the last photo in the list there will be no next photo so we need to check the condition and send condition to the first photo
+                if (nxtphoto.length == 0) {
+
+                    nxtphoto = $("#photoShow div:first");
+
+                }
+
+                //now we need to change the current photo into next photo  by changing its css  class from current to previous class
+                curphoto.removeClass('current').addClass('previous');
+
+          /*to create the fading effect of previous image which will be displayed now as current image we initially keep its opacity to zero and set its class to current
+         and then use animate function to change its opacity from 0.0 to 1.0 over duration of 1sec and also use a callback funcion to remove the previous class so that
+         it will have no class and will get stack at the bottom of the photoshow div  since its  z-index will  be 0 by default */
+
+                nxtphoto.css({ opacity: 0.0 }).addClass('current').animate({ opacity: 1.0 }, 1000,
+                function () {
+                    curphoto.removeClass('previous');
+                });
+
+
+
+
+            }
+         
+
+    </script>
+<style type="text/css">
+#photoShow {
+    height:400px;
+    width:400px;
+}
+#photoShow div 
+{  /* to use z-index we need to assign position and z-index with greater number will be on top*/
+    position:absolute;
+    z-index: 0;
+}
+#photoShow div.previous {
+    z-index: 1;
+}
+#photoShow div.current {
+    z-index: 2;
+}
+</style>
+</head>
+<body>
+    <h1>
+        jQuery-based Image Rotator</h1>
+    <div id="photoShow">
+        <div class="current">
+            <img src="images/Grass.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+        </div>
+        <div>
+            <img src="images/Leaf.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+        </div>
+        <div>
+            <img src="images/Spring.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+        </div>
+        <div>
+            <img src="images/Water.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+        </div>
+    </div>
+</body>
+</html>

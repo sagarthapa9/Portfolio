@@ -1,0 +1,98 @@
+﻿body
+{
+	font-family: 'Droid Sans', 'Arial', sans-serif;
+	color: #6F7986;
+	font-size: 14px;
+}
+
+header
+{
+	text-align: center;
+}
+
+footer
+{
+	
+}
+
+select
+{
+	width: 240px;
+}
+
+#wrapper 
+{ 
+	margin: 0 auto;
+	width: 1168px;
+}
+
+#leftcolumn 
+{ 
+	color: #333;
+	border: 1px solid #ccc;
+	background-color: #F2F2E6;
+	margin: 10px 5px 10px 0px;
+	padding: 10px;
+	height: 368px;
+	width: 848px;
+	float: left;
+}
+
+#description 
+{ 
+	color: #333;
+	border: 1px solid #ccc;
+	background-color: #F2F2E6;
+	margin: 10px 5px 10px 0px;
+	padding: 10px;
+	height: 100%;
+	width: 848px;
+	float: left;
+}
+
+#rightcolumn 
+{
+	display: inline;
+	position: relative;
+	float: right;
+	color: #666;
+	border: 1px solid #ccc;
+	background-color: #F2F2E6;
+	margin: 10px 0px 10px 0px;
+	padding: 10px;
+	height: 368px;
+	width: 265px;
+}
+
+#mycustomscroll 
+{
+	list-style: none;
+	height: 348px;
+	overflow: auto;
+	position: relative;
+	background-color: #F2F2E6;
+	margin: 0.3em auto;
+	font-size: 12px;
+}
+
+#mycustomscroll li
+{
+	font-size: 12px;
+	width: 230px;
+	background-color: #333;
+	color: #CCC;
+	padding: 5px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+#mycustomscroll a
+{
+	text-decoration: none;
+}
+
+#mycustomscroll a:hover li
+{
+	background-color: #6F7986;
+	color: #FFF;
+}

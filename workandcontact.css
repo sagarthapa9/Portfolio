@@ -1,0 +1,426 @@
+﻿@font-face {
+    font-family: 'EconomicaBold';
+    src: url('fonts/economica/Economica-Bold-OTF-webfont.eot');
+    src:local('☺'), url('fonts/economica/Economica-Bold-OTF-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/economica/Economica-Bold-OTF-webfont.woff') format('woff'),
+         url('fonts/economica/Economica-Bold-OTF-webfont.ttf') format('truetype'),
+         url('fonts/economica/Economica-Bold-OTF-webfont.svg#EconomicaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AlegreyaItalic';
+    src: url('fonts/alegreya/Alegreya-Italic-webfont.eot');
+    src:local('☺'), url('fonts/alegreya/Alegreya-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/alegreya/Alegreya-Italic-webfont.woff') format('woff'),
+         url('fonts/alegreya/Alegreya-Italic-webfont.ttf') format('truetype'),
+         url('fonts/alegreya/Alegreya-Italic-webfont.svg#AlegreyaItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Limited reset*/
+html,body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p,hgroup,
+blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a
+{
+   text-decoration:none;
+    }
+
+/*html display rule*/
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary{
+	display: block;
+}
+
+/*------------HTML layouts---------------------*/
+html,body 
+{
+   height:100%; 
+   max-width:100%;
+}
+
+body
+
+{
+    
+    text-align:center;
+    font:100% Georgia,"Times New Roman",Times,Sherif; 
+    background :transparent url(images/dust.jpg);  
+  
+}
+
+#wrapper
+{
+    height:100%;
+    min-height:100%;
+    
+    
+       }
+    
+   nav
+{
+ padding-top:80px;
+ padding-left:500px;
+ padding-bottom:150px;
+        
+            } 
+        
+        
+        
+   nav ul,ul.menu
+{
+    list-style:none; 
+    
+    }
+   
+
+
+      
+ .info
+ {
+     float:left;
+     width:30%;
+     height:auto;
+     padding-bottom:10px;
+     }
+    
+.Image
+{
+    float:right;
+    width:70%;
+    padding-bottom:10px;
+    
+    }
+    
+    
+     footer
+    {
+     
+      clear:both;
+      
+      background-color:#0D0D0D;
+      width:100%;
+      height:200px; 
+      margin:2px auto 0;
+      padding:0 5px 0; 
+        }
+      
+        
+        
+    
+    /*-------Menu  style-----------*/    
+
+            
+   ul li
+       {
+         font-family:EconomicaBold,ExoExtraBold,Helvetica,sans-serif;
+          float:left;
+        }
+        
+        
+         ul li a
+    {
+        
+      font-size:1.7em;
+      color:#000000; 
+      padding:0 30px;
+      position: relative;
+      border: none; 
+        
+        }
+       
+       ul li a.first
+       {
+           color:#FFA500;
+          
+           
+           }  
+           
+         ul li a:hover
+          {
+            
+            color:#FFA500;
+            cursor:pointer;
+              }
+   
+   /*--------------------Project styles-----------------*/
+   
+      
+   article#project1 .info h2
+       {
+       
+          font-family:AlegreyaItalic,ExoExtraBold,Helvetica,sans-serif;
+          color:#00688B;
+          font-size :1.8em; 
+          text-align:left;
+          padding-left:110px;
+          padding-bottom:6px;
+       }
+     article#project1 .info p.Text2col
+      
+       {
+          
+        font-family:AlegreyaItalic,sans-serif,Helvetica;
+        font-size:1.3em;
+        font-weight:500;
+        color:#2B2B2B;
+        padding-left:110px;
+        letter-spacing:1px;
+       -moz-column-gap:20px;
+       -webkit-column-count:1;
+       -webkit-column-gap:20px; 
+        column-count:1;
+        column-gap :20px;
+        text-align:left;
+        margin-bottom:3px;  
+          
+    }
+    
+   article#project1 img
+   {
+       height:600px;
+       width:500px;
+       padding:5px;
+         
+       }   
+       
+     .link
+     {
+        text-align:left;
+        font-family:EconomicaBold,ExoExtraBold,Helvetica,sans-serif;
+        font-size:1.5em;
+        padding:25px 0 0 110px;
+         }
+       
+       .link a
+       {
+          color:#FFA500; 
+           }
+       .link a:hover
+       {
+           text-decoration:underline;
+          
+           }    
+       
+    article#project2
+    {
+       padding-top:60px;  
+       
+        
+                }  
+                
+                
+     .borderline
+      
+       {
+           
+           border-top: 1px solid #9AC0CD;
+           margin:0 100px 0 100px;
+           }
+                                      
+    article#project2 .info h2
+       {
+       
+          font-family:AlegreyaItalic,ExoExtraBold,Helvetica,sans-serif;
+          color:#00688B;
+          font-size :1.8em; 
+          text-align:left;
+          padding-left:40px;
+          padding-bottom:6px;
+       }
+     article#project2 .info p.Text2col
+      
+       {
+          
+        font-family:AlegreyaItalic,sans-serif,Helvetica;
+        font-size:1.3em;
+        font-weight:500;
+        color:#2B2B2B;
+        padding-left:40px;
+        letter-spacing:1px;
+       -moz-column-gap:10px;
+       -webkit-column-count:1;
+       -webkit-column-gap:10px; 
+        column-count:1;
+        column-gap :10px;
+        text-align:left;
+        margin-bottom:3px;  
+          
+    }
+    
+   article#project2 img
+   {
+       height:500px;
+       width:800px;
+              
+       }       
+ p.clear
+ {
+     
+     clear:both;
+     
+     }
+   /* scroll to top */
+#scroll  
+{
+ 
+  position: relative; 
+  width: 1000px;
+  margin: 0 auto;
+  bottom: 0; 
+  right: 0;
+  background: red;
+  padding: 0;
+}
+  
+#scroll a { 
+  float: right;
+  margin: 0 0 0 0; 
+  padding: 0 0 0 0;
+}
+  
+#scroll a img { 
+  float: right;
+  padding: 0 0 0 0;
+  margin: 0;
+}    
+  
+  
+  
+/*--------footer styles--------*/
+footer h2
+     {
+      color:#DCDCDC; 
+      font-family:EconomicaBold,Helvetica,sans-serif;
+       letter-spacing:1px;
+      text-align:center;
+      font-weight:600;
+      padding:0;  
+         }
+         
+     .socialntw
+      {
+          
+          padding-left:10px;
+         
+          
+          }
+       footer p
+       
+       {
+           margin-top:8px;
+           color:#DCDCDC;
+           font-family: 'lucida sans', sans-serif;
+           font-size: 90%;
+           }
+/*-----------Contact styles-------------*/
+
+
+section#contactstyles .info h2
+{
+    
+    font-family:AlegreyaItalic,ExoExtraBold,Helvetica,sans-serif;
+    color:#00688B;
+    font-size :1.8em; 
+    text-align:left;
+    padding-left:60px;
+    padding-bottom:6px;
+    
+    }
+    
+  section#contactstyles .info p.Text2col
+      
+       {
+          
+        font-family:AlegreyaItalic,sans-serif,Helvetica;
+        font-size:1.3em;
+        font-weight:500;
+        color:#2B2B2B;
+        padding-left:60px;
+        letter-spacing:1px;
+       -moz-column-gap:10px;
+       -webkit-column-count:1;
+       -webkit-column-gap:10px; 
+        column-count:1;
+        column-gap :5px;
+        text-align:left;
+        margin-bottom:3px;  
+          
+    }
+    
+    /*----------Contact form styles------------*/
+    
+    aside#form
+    {
+       float:right;
+        width:70%
+        
+        }
+
+
+    
+     aside#form label,
+     aside#form email,
+     aside#form textarea
+       {
+          font-family:AlegreyaItalic,ExoExtraBold,Helvetica,sans-serif;
+          color:#00688B;
+          font-size :1.4em;
+        
+        }
+    aside#form label, aside#form input
+    {
+        
+        position:relative;
+        margin-left:16px;
+        margin-bottom:34px;
+        width:300px;
+        height:40px;
+        }
+        
+    aside#form textarea
+       {
+           
+           width:600px;
+           height:200px;
+           margin-bottom:10px;
+           } 
+       
+       
+    aside#form input, aside#form textarea
+       {  
+        font-family:Helvetiica,sans-serif;
+        font-size:1.2em;
+        color:Black;
+       
+       }
+        
+       aside#form #btnSubmit
+       {
+         position:relative;
+         top:-90px;
+         left:330px;
+         width:100px;
+         height:45px;  
+         font-family:EconomicaBold,Helvetica,sans-serif;
+         font-weight:400;
+         color:#00688B;
+           }  
+       aside#form #DisplayMsg
+       {
+         
+           position:relative;
+           left:-90px;
+           font-family:EconomicaBold,Helvetica,sans-serif;
+           font-weight:400;
+           color:Red;
+
+           
+           
+           }

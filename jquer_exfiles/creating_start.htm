@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Document</title>
+<script type="text/javascript" src="jquery-1.3.2.js"></script>
+<script type="text/javascript">
+    $("document").ready(function () {
+        //using jquery's html() function to get all the html content inside unorderd list #list1
+        // alert($("#list1").html());
+
+        //setting new elements using html(),which will delete previous list item and set only new list item specified in html()
+        $("#list1").html("<li>new list item</li>");
+
+        // creating new content using jquery
+        var para = $("<p>This is new paragraph</P>");
+        $("#para2").html(para.html());
+
+        //using text() method of jquery
+        $("p:last").text("This is last paragraph");
+    });
+</script>
+<style type="text/css">
+.a { color: Navy; }
+.b { color: Maroon; }
+</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">item 1</li>
+		<li class="a">item 2</li>
+		<li class="b">item 3</li>
+		<li class="b">item 4</li>
+	</ul>
+<p class="a">This is paragraph 1</p>
+<p id="para2">This is paragraph 2</p>
+<p class="b">This is paragraph 3</p>
+<p>This is paragraph 4</p>
+</body>
+</html>

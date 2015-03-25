@@ -1,0 +1,446 @@
+﻿
+@font-face {
+    font-family: 'CopystructBold';
+    src: url('assets/copystruct/COPYB___-webfont.eot');
+    src:local('☺'), url('assets/copystruct/COPYB___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/copystruct/COPYB___-webfont.woff') format('woff'),
+         url('assets/copystruct/COPYB___-webfont.ttf') format('truetype'),
+         url('assets/copystruct/COPYB___-webfont.svg#CopystructBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+@font-face {
+    font-family: 'FearlessRegular';
+    src: url('assets/fearless/fearless-webfont.eot');
+    src:local('☺'), url('assets/fearless/fearless-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fearless/fearless-webfont.woff') format('woff'),
+         url('assets/fearless/fearless-webfont.ttf') format('truetype'),
+         url('assets/fearless/fearless-webfont.svg#FearlessRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AmaranthRegular';
+    src: url('assets/amarath/Amaranth-webfont.eot');
+    src:local('☺'), url('assets/amarath/Amaranth-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/amarath/Amaranth-webfont.woff') format('woff'),
+         url('assets/amarath/Amaranth-webfont.ttf') format('truetype'),
+         url('assets/amarath/Amaranth-webfont.svg#AmaranthRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*limited reset*/
+ html,body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p,hgroup,
+blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a{
+   text-decoration:none;
+    }
+    
+ /*html5 display rule*/
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+
+body
+{
+    background:url(_images/jadedReality.jpg);
+    background-attachment:fixed;/*doesnot allow backgroung image to scroll*/
+    text-align:center;
+    font:100% Georgia,"Times New Roman",Times,Sherif;
+    
+    
+    }
+    
+nav ul, ul.menu
+{
+    list-style:none;
+    
+    }
+    
+/*---------layouts styles------*/
+
+#wrapper
+{
+  width:1100px;
+  margin:0 auto;
+  padding:0 50px;
+  background:#f8f8f8 url(_images/cycle_back.gif) no-repeat right top;
+  background:rgba(250,250,250,.60);
+    }
+ header#mainheader
+ {
+     height:185px;
+     
+     }
+
+section#trailInfo
+{
+   float:left;
+   width:600px;
+   padding:0 10px 0 20px;
+   margin-bottom:2em;
+    }
+
+ aside#trailnews
+ {
+    float:right;
+    width:450px;
+    margin-bottom:2em; 
+     
+     }
+  footer#pageFooter
+  {
+      clear:both;
+      
+      }
+  
+/*----------presentation style---------*/
+.text2col
+{
+ -moz-column-count:2;
+ -moz-column-gap:1em;
+ -webkit-column-count:2;
+ -webkit-column-gap:1em; 
+ column-count:2;
+ column-gap:1em;
+ text-align:justify;  
+    }
+
+
+/*header style*/
+
+header#mainheader
+{
+    background:url(_images/logo.gif) no-repeat 25px 0;
+    padding:75px 0 0 30px;
+    position:relative;
+    border-bottom:2px solid #7f7f7f;
+    margin-bottom:1em;
+    
+    }
+header#mainheader h1 span
+  {
+     
+     position:absolute;
+     left:-2000em; /*to make font out of browser viewport*/
+      }
+      
+  header#mainheader nav
+  {
+      position:absolute;
+      left:225px;
+      top:0;
+      padding:15px;
+      }  
+      
+    header#mainheader nav h1 
+  {
+     position:absolute;
+     left:-2000em; 
+      }  
+ header#mainheader ul
+ {
+     float:left;
+     }
+header#mainheader ul li
+{
+    font-family:CopystructBold,Helvetica,sans-serif;
+    font-weight:bold;
+    float:left;
+
+    }
+
+
+header#mainheader ul li a
+{
+    
+    
+    font-size:1.2em;
+    color:#000;
+    padding:0 20px;
+    border-right:1px solid  #000;
+    text-decoration:none;
+    }
+
+header#mainheader ul li a.last
+{
+    border:none;
+    }
+
+
+
+header#mainheader ul li a:hover
+{
+    color:#cb7d20;
+    }
+
+
+header#mainheader hgroup h1
+{   
+    font-family:CopystructBold,Helvetica,sans-serif;
+    font-size:4em;
+    color:#7f7f7f;
+    font-weight:normal;
+    margin-top: .2em;
+    
+    text-transform:uppercase;
+	
+    
+    }
+header#mainheader hgroup h2
+{  
+    font-family:FearlessRegular,Helvetica,sans-serif;
+    font-size:2em;
+    font-weight:bold;
+    color:#808000;
+    }
+
+/*trail info section style*/
+
+section#trailInfo 
+{
+    border-right:1px solid #7f7f7f;
+    }
+
+
+section#trailInfo header p {
+	font-size: .9em;
+	color: #cb7d20;
+	text-align:left;
+}
+section#trailInfo header a {
+	color: #cb7d20;
+}
+section#trailInfo header a:hover {
+	color:#952
+}
+section#trailInfo header h1
+{
+    font-weight:normal;
+    font-size:1.3em;
+    margin-top:1em;
+    text-align:left;
+    }
+
+section#trailInfo article h1
+{
+  font-weight:normal;
+  font-family:CopystructBold,Helvetica,sans-serif;
+  color:#7f7f7f;
+  font-size:2em; 
+  text-align:left;
+  margin-bottom:.6em;
+  margin-right:30px;  
+    }
+
+section#trailInfo caption
+{
+  font-family:AmaranthRegularr,Helvetica,sans-serif; 
+  font-weight:bold;
+  font-size:1.4em;
+  text-align:left;
+  
+    }
+
+section#trailInfo caption span
+{
+    font-size:.6em;
+    font-style:italic;
+    text-align:right;
+    text-transform:lowercase;
+    position: relative;
+	right: 0;
+	top: -1.4em;
+	display: block;
+    }
+
+section#trailInfo table#quickFacts
+{
+    
+   width:425px;
+   background-color:#c3cebc;
+   border:none;
+   margin:.5em 0  1.5em 1em; 
+    }
+section#trailInfo table#quickFacts th
+{
+   width:100px; 
+    
+    }
+
+section#trailInfo table#quickFacts th,
+section#trailInfo table#quickFacts td
+{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	padding-left: 1em;
+	text-align: left;
+	line-height: 3; 
+    
+    }
+
+section#trailInfo table#quickFacts tr.alt
+{
+    background-color:#e1d8b9;
+   
+    }
+
+
+section#trailInfo p
+{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:1em;
+    
+    }
+
+section#trailInfo h2
+{
+    font-size:1em;
+    margin-top:1.2em;
+    margin-bottom:0;
+    color:#000;
+    }
+section#trailInfo img
+{
+   display:block; 
+    }
+   
+ /*--trails aside news style--*/
+ aside#trailnews
+ {
+     font-size:90%;
+     }
+  
+  aside#trailnews h1
+  {
+      font-family:CopystructBold,Helvetica,sans-serif;
+      font-size:3em;
+      font-weight:normal;
+      text-align:left;
+      color:#7f7f7f;
+      border-bottom:1px solid #7f7f7f;
+      margin-bottom:.5em;
+      
+      }
+  
+  aside#trailnews .news
+  {
+      background:#e1d8b9;
+      padding:1em 1em;
+      margin-bottom:1.5em;
+      
+      }
+    aside#trailnews .news hgroup
+    {
+       text-align:left; 
+        
+        }
+        
+    aside#trailnews .news h1
+    {
+        font-size:2.5em;
+        border:none;
+       
+        }
+  
+    aside#trailnews .news h2
+    {
+      font-size:1.2em;
+      margin-bottom:.2em;
+        
+        }
+  
+    aside#trailnews .news h3
+    {
+       font-size:1.1em;
+       color:#666;
+       font-weight:normal;
+       margin-bottom:.2em; 
+        }
+ aside#trailnews .news p
+   {
+         line-height:1.8;
+         color:#333;
+         margin-bottom:1em;
+         text-align:justify;
+           
+           }
+  
+ aside#trailnews .news p.pubdate
+    {
+       text-align:right;
+       color:#666;
+       font-size:.9em;
+       font-style:italic;
+        }
+  /*---footer style---*/
+  footer#pageFooter
+  {
+      border-top:2px solid #7f7f7f;
+      padding:2em;
+      }
+   footer#pageFooter  p
+   {
+       text-align:center;
+       font-style:italic;
+       margin-bottom:1em;
+       color:#666;
+       }
+   footer#pageFooter a
+   {
+     text-decoration:none;
+     color:#cb7d20;  
+       }
+  
+   footer#pageFooter a:hover
+   {
+       color:#952;
+       
+       }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

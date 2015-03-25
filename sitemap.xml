@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://sagarthapa.co.uk/</loc>
+  <lastmod>2014-03-05T15:43:27+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://sagarthapa.co.uk/work.htm</loc>
+  <lastmod>2013-12-28T12:34:22+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://sagarthapa.co.uk/Blog/default.aspx</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://sagarthapa.co.uk/Contact.aspx</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://sagarthapa.co.uk/Default.htm</loc>
+  <lastmod>2014-03-05T15:43:27+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://sagarthapa.co.uk/html5/trailguide.htm</loc>
+  <lastmod>2013-12-02T13:45:51+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://sagarthapa.co.uk/work/html5vedio.htm</loc>
+  <lastmod>2013-12-02T13:55:14+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://sagarthapa.co.uk/Blog/post/working-with-themes-in-aspnet</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://sagarthapa.co.uk/Blog/post/welcome-to-my-site</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://sagarthapa.co.uk/Blog/post/Welcome-to-BlogEngineNET-27</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://sagarthapa.co.uk/Blog/page/Example-page</loc>
+  <changefreq>yearly</changefreq>
+</url>
+</urlset>

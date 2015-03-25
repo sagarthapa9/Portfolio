@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Document</title>
+<script type="text/javascript" src="Jquery.js"></script>
+<script type="text/javascript">
+    $("document").ready(function () {
+        //using length property of jquery to find how many paragraph are there in the document
+        // alert("there are" + $("p").length + "<p> elements");
+
+        //using size method of jquery to find how many paragraph are there in the document
+        // alert("there are" + $("p").size() + "<p> elements");
+
+        //using get method which returns array of the DOM element 
+        var elems = $("li").get();
+
+        //here length property is a array property
+        // alert("there are " + elems.length + "<li> elements");
+
+        //get(index) method
+        //alert($('li').get(0));
+
+        //find method
+        // $("ul").find("li.b").css("border", "3px solid red");
+
+        //each function is used to loop various elements
+        var marignleft=0;
+        var border=3;
+
+        $("p").each(function(){
+        
+            $(this).css("border",border+"px  solid red");
+            $(this).css("margin-left", marignleft);
+        
+           border+=2;
+           marignleft+=10;
+        
+        });
+
+
+
+    });
+</script>
+<style type="text/css">
+.a { color: Navy; }
+.b { color: Maroon; }
+</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">item 1</li>
+		<li class="a">item 2</li>
+		<li class="b">item 3</li>
+		<li class="b">item 4</li>
+	</ul>
+<p class="a">This is paragraph 1</p>
+<p id="para1">This is paragraph 2</p>
+<p class="b">This is paragraph 3</p>
+<p id="para2">This is paragraph 4</p>
+</body>
+</html>
