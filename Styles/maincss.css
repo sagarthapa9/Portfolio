@@ -1,0 +1,344 @@
+﻿@font-face {
+    font-family: 'AnonymousRegular';
+    src: url('/fonts/anonymous/Anonymous-webfont.eot');
+    src: local('☺'), url('/fonts/anonymous/Anonymous-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/anonymous/Anonymous-webfont.woff') format('woff'), url('/fonts/anonymous/Anonymous-webfont.ttf') format('truetype'), url('/fonts/anonymous/Anonymous-webfont.svg#AnonymousRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ExoExtraBold';
+    src: url('/fonts/exo-font/Exo-ExtraBold-webfont.eot');
+    src: local('☺'), url('/fonts/exo-font/Exo-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/exo-font/Exo-ExtraBold-webfont.woff') format('woff'), url('/fonts/exo-font/Exo-ExtraBold-webfont.ttf') format('truetype'), url('/fonts/exo-font/Exo-ExtraBold-webfont.svg#ExoExtraBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EconomicaBold';
+    src: url('/fonts/economica/Economica-Bold-OTF-webfont.eot');
+    src: local('☺'), url('/fonts/economica/Economica-Bold-OTF-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/economica/Economica-Bold-OTF-webfont.woff') format('woff'), url('/fonts/economica/Economica-Bold-OTF-webfont.ttf') format('truetype'), url('/fonts/economica/Economica-Bold-OTF-webfont.svg#EconomicaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EconomicaRegular';
+    src: url('/fonts/economica/Economica-Regular-OTF-webfont.eot');
+    src: local('☺'), url('/fonts/economica/Economica-Regular-OTF-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/economica/Economica-Regular-OTF-webfont.woff') format('woff'), url('/fonts/economica/Economica-Regular-OTF-webfont.ttf') format('truetype'), url('/fonts/economica/Economica-Regular-OTF-webfont.svg#EconomicaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GartonMedium';
+    src: url('/fonts/garton/garto16-webfont.eot');
+    src: local('☺'), url('/fonts/garton/garto16-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/garton/garto16-webfont.woff') format('woff'), url('/fonts/garton/garto16-webfont.ttf') format('truetype'), url('/fonts/garton/garto16-webfont.svg#GartonMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlegreyaSCItalic';
+    src: url('/fonts/alegreya/AlegreyaSC-Italic-webfont.eot');
+    src: local('☺'), url('/fonts/alegreya/AlegreyaSC-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/alegreya/AlegreyaSC-Italic-webfont.woff') format('woff'), url('/fonts/alegreya/AlegreyaSC-Italic-webfont.ttf') format('truetype'), url('/fonts/alegreya/AlegreyaSC-Italic-webfont.svg#AlegreyaSCItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlegreyaItalic';
+    src: url('/fonts/alegreya/Alegreya-Italic-webfont.eot');
+    src: local('☺'), url('/fonts/alegreya/Alegreya-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/alegreya/Alegreya-Italic-webfont.woff') format('woff'), url('/fonts/alegreya/Alegreya-Italic-webfont.ttf') format('truetype'), url('/fonts/alegreya/Alegreya-Italic-webfont.svg#AlegreyaItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Limited reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, hgroup,
+blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*html display rule*/
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+    display: block;
+}
+
+body {
+    text-align: center;
+    font: 100% Georgia,"Times New Roman",Times,Sherif;
+    max-width: 100%;
+}
+.mainContainer {
+    max-width:1400px !important;
+}
+
+nav ul, ul.menu {
+    list-style: none;
+}
+/*layout styles*/
+
+header#mainheader {
+    height: 650px;
+}
+
+/*---Header style----*/
+
+header#mainheader {
+    background: #a9a9a9 url(/images/cybercity4.jpg);
+    margin: 0 2.5px;
+    position: relative;
+}
+
+    header#mainheader hgroup h1 {
+        position: absolute;
+        top: 240px;
+        margin-left: 80px;
+        color: #F8F8FF;
+        font-family: EconomicaBold,EconomicaRegular, Comic Sans MS;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        font-size: 5.5em;
+        text-shadow: 0 1px 4px #000000;
+    }
+
+    header#mainheader hgroup h2 {
+        position: absolute;
+        top: 360px;
+        margin-left: 79px;
+        color: #F8F8FF;
+        font-family: EconomicaRegular, Comic Sans MS;
+        letter-spacing: -1px;
+        font-size: 4em;
+        text-shadow: 0 1px 2px #000000;
+    }
+
+    header#mainheader nav {
+        position: absolute;
+        left: 500px;
+        top: 30px;
+        padding: 15px;
+    }
+
+    header#mainheader ul {
+        float: left;
+    }
+
+        header#mainheader ul li {
+            font-family: EconomicaBold,ExoExtraBold,Helvetica,sans-serif;
+            float: left;
+        }
+
+            header#mainheader ul li a {
+                font-size: 2.7em;
+                color: #F8F8FF;
+                padding: 0 30px;
+                position: relative;
+                border: none;
+            }
+
+                header#mainheader ul li a.first {
+                    color: #FFA500;
+                }
+
+                header#mainheader ul li a:hover {
+                    color: #FFA500;
+                    cursor: pointer;
+                }
+/*-----------------Intro style layouts--------------*/
+#myInfo {
+    margin: 0;
+    padding: 0;
+}
+
+    #myInfo section#myIntro {
+        position: relative;
+        margin: 0 10px;
+        background: transparent url(/images/dust.jpg);
+        height: 1000px;
+        border-radius: 15px;
+    }
+
+
+
+        #myInfo section#myIntro p {
+            padding: 0px 180px 35px;
+            font-family: AlegreyaItalic,sans-serif,Helvetica;
+            font-size: 2.3em;
+            font-weight: 500;
+            color: #2B2B2B;
+            letter-spacing: 1px;
+        }
+
+        #myInfo section#myIntro h2 {
+            margin: 10px auto 0px;
+            padding: 40px 5px 5px 5px;
+            font-family: AlegreyaItalic,Helvetica,sans-serif;
+            font-size: 3em;
+            font-weight: 800;
+            color: #00688B;
+        }
+
+
+        #myInfo section#myIntro .parastyle {
+            padding: 5px;
+            font-size: 2.2em;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        #myInfo section#myIntro .headingstyle {
+            padding: 5px;
+            font-size: 2.7em;
+            font-weight: 600;
+            text-align: center;
+        }
+
+
+
+.Intropart {
+    margin: 0 auto;
+    padding: 20px;
+    width: 30%;
+    height: 400px;
+    float: left;
+}
+
+.borderline {
+    width: 830px;
+    position: absolute;
+    left: 40px;
+    bottom: 510px;
+    border-bottom: 1px solid #9AC0CD;
+}
+
+/*-----------skillsets layout styles------------*/
+
+#myInfo section#myIntro section#myprofile {
+    position: absolute;
+    top: 470px;
+    width: 800px;
+}
+
+    #myInfo section#myIntro section#myprofile h2 {
+        text-align: left;
+        padding-left: 60px;
+        margin-top: 25px;
+    }
+
+    #myInfo section#myIntro section#myprofile p {
+        text-align: left;
+        padding-left: 60px;
+        margin-top: 10px;
+    }
+
+
+/*==============skillgraph style===========*/
+
+#myInfo section#myIntro aside#skillgraph ul {
+    position: absolute;
+    top: 590px;
+    left: 640px;
+    list-style: none;
+}
+
+#myInfo section#myIntro aside#skillgraph li {
+    text-align: left;
+    font-weight: 600;
+    color: #0F0F0F;
+    padding: 10px;
+    height: 23px;
+}
+
+    #myInfo section#myIntro aside#skillgraph li#html {
+        width: 600px;
+        background-color: #68838B;
+    }
+
+    #myInfo section#myIntro aside#skillgraph li#css {
+        width: 500px;
+        background-color: #D1EEEE;
+    }
+
+    #myInfo section#myIntro aside#skillgraph li#jquery {
+        width: 400px;
+        background-color: #68838B;
+    }
+
+    #myInfo section#myIntro aside#skillgraph li#asp {
+        width: 450px;
+        background-color: #D1EEEE;
+    }
+
+    #myInfo section#myIntro aside#skillgraph li#csharp {
+        width: 430px;
+        background-color: #68838B;
+    }
+
+    #myInfo section#myIntro aside#skillgraph li#oop {
+        width: 430px;
+        background-color: #D1EEEE;
+    }
+
+    #myInfo section#myIntro aside#skillgraph li#sql {
+        width: 400px;
+        background-color: #68838B;
+    }
+/* scroll to top */
+#scroll {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    bottom: 14px;
+    right: 0;
+    background: red;
+    padding: 0;
+}
+
+    #scroll a {
+        float: right;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+        #scroll a img {
+            float: right;
+            padding: 0 0 0 0;
+            margin: 0;
+        }
+
+
+/*============footer layout style========*/
+
+footer#footer {
+    margin: 2px auto 0;
+    height: 200px;
+    background-color: #0D0D0D;
+    padding: 0 5px 0;
+}
+
+    footer#footer h2 {
+        color: #DCDCDC;
+        font-family: EconomicaBold,Helvetica,sans-serif;
+        letter-spacing: 1px;
+        text-align: center;
+        font-weight: 600;
+        padding: 30px 0 10px 0;
+    }
+
+.socialntw {
+    padding-left: 10px;
+}
+
+footer#footer p {
+    margin-top: 8px;
+    color: #DCDCDC;
+    font-family: 'lucida sans', sans-serif;
+    font-size: 90%;
+}
