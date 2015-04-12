@@ -75,26 +75,34 @@ body {
     font: 100% Georgia,"Times New Roman",Times,Sherif;
     max-width: 100%;
 }
-.mainContainer {
-    max-width:1400px !important;
-}
 
+.Buffer40{
+    margin-bottom:40px;
+    margin-top:40px;
+}
 nav ul, ul.menu {
     list-style: none;
 }
 /*layout styles*/
 
+.jumbotron {
+    background-image: url(/images/cybercity4.jpg);
+    background-size: cover;
+    margin-bottom: 0;
+}
 header#mainheader {
     height: 650px;
+    margin:auto;
 }
 
 /*---Header style----*/
 
-header#mainheader {
+
+/*header#mainheader {
     background: #a9a9a9 url(/images/cybercity4.jpg);
     margin: 0 2.5px;
     position: relative;
-}
+}*/
 
     header#mainheader hgroup h1 {
         position: absolute;
@@ -121,7 +129,6 @@ header#mainheader {
 
     header#mainheader nav {
         position: absolute;
-        left: 500px;
         top: 30px;
         padding: 15px;
     }
@@ -153,15 +160,15 @@ header#mainheader {
                 }
 /*-----------------Intro style layouts--------------*/
 #myInfo {
-    margin: 0;
+    float:none;
+    margin:5px auto 5px auto;
     padding: 0;
 }
-
     #myInfo section#myIntro {
-        position: relative;
-        margin: 0 10px;
+        /*position: relative;*/
+      
         background: transparent url(/images/dust.jpg);
-        height: 1000px;
+        height: auto;
         border-radius: 15px;
     }
 
@@ -190,37 +197,36 @@ header#mainheader {
             padding: 5px;
             font-size: 2.2em;
             font-weight: 300;
-            text-align: center;
+            text-align: left;
         }
 
         #myInfo section#myIntro .headingstyle {
             padding: 5px;
             font-size: 2.7em;
             font-weight: 600;
-            text-align: center;
+            text-align: left;
         }
 
 
 
 .Intropart {
-    margin: 0 auto;
-    padding: 20px;
-    width: 30%;
-    height: 400px;
-    float: left;
+ 
+    height: 240px;
 }
 
-.borderline {
-    width: 830px;
+/*/*.borderline {
+    /*width: 830px;
     position: absolute;
     left: 40px;
-    bottom: 510px;
+    bottom: 510px;*/
+    padding-left:10px;
+    padding-right:10px;
     border-bottom: 1px solid #9AC0CD;
-}
+}*/*/
 
 /*-----------skillsets layout styles------------*/
 
-#myInfo section#myIntro section#myprofile {
+/*#myInfo section#myIntro section#myprofile {
     position: absolute;
     top: 470px;
     width: 800px;
@@ -236,19 +242,19 @@ header#mainheader {
         text-align: left;
         padding-left: 60px;
         margin-top: 10px;
-    }
+    }*/d
 
 
 /*==============skillgraph style===========*/
 
-#myInfo section#myIntro aside#skillgraph ul {
+/*#myInfo section#myIntro aside#skillgraph ul {
     position: absolute;
     top: 590px;
     left: 640px;
     list-style: none;
-}
+}*/
 
-#myInfo section#myIntro aside#skillgraph li {
+/*#myInfo section#myIntro aside#skillgraph li {
     text-align: left;
     font-weight: 600;
     color: #0F0F0F;
@@ -289,7 +295,7 @@ header#mainheader {
     #myInfo section#myIntro aside#skillgraph li#sql {
         width: 400px;
         background-color: #68838B;
-    }
+    }*/
 /* scroll to top */
 #scroll {
     position: relative;
@@ -321,6 +327,7 @@ footer#footer {
     height: 200px;
     background-color: #0D0D0D;
     padding: 0 5px 0;
+    /*width:100%;*/
 }
 
     footer#footer h2 {
@@ -341,4 +348,26 @@ footer#footer p {
     color: #DCDCDC;
     font-family: 'lucida sans', sans-serif;
     font-size: 90%;
+}
+/*======================bootstrap modification===========================*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1390px;
+    }
+       #myInfo section#myIntro .center {
+            padding: 5px;
+            font-size: 3em;
+            font-weight: 600;
+            text-align: center;
+        }
+       header#mainheader nav {
+        left: 1100px;
+    }
+}
+
+@media (min-width: 7680px) {
+
+       header#mainheader nav {
+        left: 800px;
+    }
 }

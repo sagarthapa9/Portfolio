@@ -13,7 +13,7 @@
 
     <link href="/Styles/maincss.css" type="text/css" rel="Stylesheet" />
     <link href="/Styles/slideshow.css" type="text/css" rel="Stylesheet" />
-    
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,7 +24,7 @@
     <script src="/Scripts/animation.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function () {
-            $("#sitenav a.anime").hover(
+            $("a .anime").hover(
             function () {
                 $(this).animate({ top: "-8px" });
             },
@@ -37,11 +37,10 @@
 </head>
 <body>
     <div class="container mainContainer">
-        <!--<div id=content>-->
-        <header id=mainheader>
+        <header class="jumbotron" id=mainheader>
             <hgroup>
-                <h1>Web application & <br />front-end developer</h1>
-                <h2>I have ability to take an idea & <br />make it into a <em>Digitized Reality</em></h2>
+                <h1>Web application & <br />Software Developer</h1>
+                <h2>I am passionate about taking an idea & <br />making it into a <em>Digitized Reality</em></h2>
             </hgroup>
             <nav id=mainnav>
                 <ul id=sitenav>
@@ -51,60 +50,24 @@
                     <li> <a href="Contact.aspx" class="anime">Contact</a></li>
                 </ul>
             </nav>
-            <!--<div id="slideshow">
-                <div id="slidecontainer">
-                    <div class="slide">
-                        <h2>Web Developement tutorials </h2>
-                        <p>
-                            <a href="http://sixrevisions.com/tutorials/web-development-tutorials/using-xampp-for-local-wordpress-theme-development/">
-                                <img src="images/img_slide_01.jpg" alt="An image that says Install X A M P P for wordpress." width="215" height="145" />
-                            </a>
-                            If you're into developing web apps, you should check out the tutorial called "
-                            <a href="http://sixrevisions.com/tutorials/web-development-tutorials/using-xampp-for-local-wordpress-theme-development/">
-                                Using XAMPP for Local WordPress Theme Development
-                            </a>" which shows you how to set up a local testing server for developing PHP/Perl
-                            based applications locally on your computer. The example also shows you how to set up WordPress locally!
-                        </p>
-                    </div>
-                    <div class="slide">
-                        <h2>Grunge Brushes, Anyone?</h2>
-                        <p>
-                            <a href="http://sixrevisions.com/freebies/brushes/sr-grunge-free-high-resolution-photoshop-grunge-brushes/">
-                                <img src="images/img_slide_02.jpg" width="215" height="145" alt="A thumbnail image that says S R grunge photoshop brushes 6 high resolution grunge brushes by six revisions." />
-                            </a>In this layout, I used <a href="http://sixrevisions.com/freebies/brushes/sr-grunge-free-high-resolution-photoshop-grunge-brushes/">SR Grunge</a>,
-                            which is a free set of high-resolution Photoshop brushes you can download here on Six Revisions.
-                        </p>
-                        <p>
-                    </div>
-                    <div class="slide">
-                        <h2>How About Some Awesome Grunge Textures?</h2>
-                        <p><a href="http://sixrevisions.com/freebies/textures/grunge-extreme-15-high-resolution-grunge-textures/"><img src="images/img_slide_03.jpg" width="215" height="145" alt="A thumbnail image that says grunge extreme 15 free high resolution grunge textures six revisions." /></a>The texture used in this web page is from the Grunge Extreme Textures freebie set by JC Parmley released here on Six Revisions.</p>
-                        <p>You can head over to the <a href="http://sixrevisions.com/freebies/textures/grunge-extreme-15-high-resolution-grunge-textures/">Grunge Extreme</a> page to download the texture set or check out Six Revisions' <a href="http://sixrevisions.com/category/freebies/">freebie section</a> for even more goodies!</p>
-                    </div>
-                    <div class="slide">
-                        <h2>'Tis the End, My Friend.</h2>
-                        <p><a href="http://sixrevisions.com/tutorials/photoshop-tutorials/how-to-create-a-slick-and-clean-button-in-photoshop/"><img src="images/img_slide_04.jpg" width="215" height="145" alt="Thumbnail image that says sleek button using photoshop that links to a Photoshop tutoril." /></a>This is the last slide. Hit the left arrow control to go back to the other slides.</p>
-                        <p>Alternatively, you may want to check out the tutorial on how to create a simple and cool button in Photoshop called &quot;<a href="http://sixrevisions.com/tutorials/photoshop-tutorials/how-to-create-a-slick-and-clean-button-in-photoshop/">How to Create a Slick and Clean Button in Photoshop</a>&quot; which was inspired by the <a href="http://www.campaignmonitor.com/designer/?utm_source=sixrevisions&amp;utm_medium=banner&amp;utm_term=2&amp;utm_content=0003&amp;utm_campaign=Apr09Banners">Campaign Monitor</a> web interface.</p>
-                    </div>
-                </div>
-            </div>-->
         </header>
         <div class="container" id="myInfo">
             <section class="row" id="myIntro">
-                <h2>Who I Am?</h2>
-                <p>
-                    "Hello I am Sagar Thapa; I am a developer and designer currently residing in Oxford . I am currently looking for opportunity to enhance my programming,
-                    analytical, creative and problem solving skills and pursue my career in the competitive world of web based application development."
-                </p>
-
-                <div class="col-md-4 Intropart">
+                <div class="col-lg-12 Buffer40">
+                    <h2 class="center">--Who I Am?--</h2>
+                    <p class="parastyle">
+                        "Hello I am Sagar Thapa; I am a developer and designer currently residing in Oxford . I am currently looking for opportunity to enhance my programming,
+                        analytical, creative and problem solving skills and pursue my career in the competitive world of web based application development."
+                    </p>
+                </div>
+                <div class="col-lg-4 Intropart">
                     <h2 class="headingstyle">-- What I Do --</h2>
                     <p class="parastyle">
                         I love to create and build websites using front-end and .net technologies for developing state of art web applications
                         with minute details and presicion.
                     </p>
                 </div>
-                <div class="col-md-4 Intropart">
+                <div class="col-lg-4 Intropart">
                     <h2 class="headingstyle">-- What I Know --</h2>
                     <p class="parastyle">
                         I have been researching, designing and developing websites using <strong>
@@ -114,61 +77,57 @@
                     </p>
                 </div>
 
-                <div class="col-md-4 Intropart" id="last">
+                <div class="col-lg-4 Intropart" id="last">
                     <h2 class="headingstyle">-- What I Love --</h2>
                     <p class="parastyle">
                         I am passionate about learning innovative and creative technologies.
                         I thrive on understanding new concepts and ideas in order to enhance my skills.
                     </p>
                 </div>
-
                 <p class="borderline" />
+                <!--<div class="col-lg-12">
+                    <div class="col-lg-6" id="myprofile">
+                        <h2> What I Am Good At.. </h2>
+                        <p>
+                            I have always been keen about designing and developing professional web applications
+                            which can be implemented in real business world providing best business solutions that
+                            can help in transformation and growth of business.
+                        </p>
+                        <p>
+                            Hence I have always been enthusiastic
+                            about learning programming languages and software design techniques.
+                            I have worked on various college projects where I developed web applications.
+                            <strong>The following graph shows  proficiency of the skills I have achieved in the course of pursuing my career as web developer.</strong>
+                        </p>
+                    </div>
 
-                <section id="myprofile">
-                    <h2> What I Am Good At.. </h2>
-                    <p>
-                        I have always been keen about designing and developing professional web applications
-                        which can be implemented in real business world providing best business solutions that
-                        can help in transformation and growth of business.
-                    </p>
-                    <p>
-                        Hence I have always been enthusiastic
-                        about learning programming languages and software design techniques.
-                        I have worked on various college projects where I developed web applications.
-                        <strong>The following graph shows  proficiency of the skills I have achieved in the course of pursuing my career as web developer.</strong>
-                    </p>
-                </section>
-
-                <aside id="skillgraph">
-                    <ul>
-                        <li id="html">HTML/HTML5</li>
-                        <li id="css">CSS/CSS3</li>
-                        <li id="jquery">Javascript/jquery</li>
-                        <li id="asp">ASP.NET</li>
-                        <li id="csharp">C#</li>
-                        <li id="oop">OOP</li>
-                        <li id="sql">SQL</li>
-                    </ul>
-                </aside>
-
+                    <div class="col-lg-6" id="skillgraph">
+                        <ul>
+                            <li id="html">HTML/HTML5</li>
+                            <li id="css">CSS/CSS3</li>
+                            <li id="jquery">Javascript/jquery</li>
+                            <li id="asp">ASP.NET</li>
+                            <li id="csharp">C#</li>
+                            <li id="oop">OOP</li>
+                            <li id="sql">SQL</li>
+                        </ul>
+                    </div>
+                </div>-->
             </section>
         </div>
-        <div id="scroll">
+        <!--<div id="scroll">
             <a title="Scroll to the top" class="top" href="#"><img src="images/top.png" alt="top" /></a>
-        </div>
-        <footer id="footer">
-
-            <h2>Follow me and get in touch on...</h2>
-            <a class="socialntw" href="http://www.facebook.com/sagar.thapa.338"><img src="images/fb.png" alt="facebook" /></a>
-            <a class="socialntw" href="http://www.linkedin.com/profile/view?id=151319796&trk=hb_tab_pro_top"><img src="images/linked.png" alt="linkedin" /></a>
-            <a class="socialntw" href="#"><img src="images/yahoo.png" alt="yahoo" /></a>
-
-            <p>Copyright &copy; 2013 Sagar Thapa </p>
-
-
-        </footer>
-        <!--</div>-->
+        </div>-->
     </div>
+    <footer class="col-lg-12" id="footer">
+        <h2>Follow me and get in touch on...</h2>
+        <a class="socialntw" href="http://www.facebook.com/sagar.thapa.338"><img src="images/fb.png" alt="facebook" /></a>
+        <a class="socialntw" href="http://www.linkedin.com/profile/view?id=151319796&trk=hb_tab_pro_top"><img src="images/linked.png" alt="linkedin" /></a>
+        <a class="socialntw" href="#"><img src="images/yahoo.png" alt="yahoo" /></a>
+        <p>Copyright &copy; 2013 Sagar Thapa </p>
+    </footer>
+    <!--</div>-->
+   
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
