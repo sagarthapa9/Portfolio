@@ -59,7 +59,7 @@
                    <aside id="form">
                           &nbsp;<form id="Contactdetails" method="post" action="#" runat="server" >
 
-                        <label  ID="DisplayMsg"  runat="server"/><br />
+                        <label id="DisplayMsg"  runat="server"></label><br />
 
 
                          <label for="Fname" style="position:relative;left:-160px">First Name:</label>
@@ -71,7 +71,7 @@
                               
                               
                          
-                         <label for="Lname" style="position:relative; top:-39px">Last Name:</label>
+                         <label for="lastName" style="position:relative; top:-39px">Last Name:</label>
                    
                           <asp:RequiredFieldValidator style="position:relative; top:-39px" ID="LnameValidate" runat="server" ErrorMessage="*Please enter your Last Name" ControlToValidate="Lname"
                            ValidationGroup="save" ForeColor="Red" /> 
@@ -82,7 +82,6 @@
 
 
                          <label style="position:relative;top:-80px; left:-257px" for="email" >Email Address:</label><br />
-                           <!-- <input type="email" name="email" id="email" tabindex="20" />-->
                             
                             <asp:TextBox style="position:relative; top:-70px; left:136px" ID="emailadd" runat="server" Width="300px" />
 
